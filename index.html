@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Guess Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="index.js"></script>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<div class="container-fluid h-100 fullBody">
+		<div class="row p-5 text-center m-auto">
+			<div class="mainbd text-center p-5">
+				<h3 class="text-white">Simple Guess Game</h3>
+				<h4 class="text-white">Select Your Mode</h4>
+				<h4 id="modeText" class="text-white" value="6" >Your Mode is now <span id="selectmode" style="color: red"></span></h4>
+				<button class="modebtn" id="modebtn1" onclick="easymode(); changebg();">Easy</button>
+				<button class="modebtn" id="modebtn2" onclick="normalmode(); changebg2();">Normal</button>
+				<button class="modebtn" id="modebtn3" onclick="hardmode(); changebg3();">Hard</button><br>
+				<!-- <button class="modebtn" id="modebtn4" onclick="hardmode(); changebg3();">Custom</button><br>
+				<input type="number" class="mainInput" style="display: block; text-align: center; margin: 10px auto" name="" placeholder="Enter Your Custom Range" id="customnum"><br>
+				<button class="modebtn m-2" style="display: block; margin: 10px auto" onclick="customMode()">Submit Custom Number</button> -->
+				<input type="number" id="inputbox" class="p-4 mainInput" name="" placeholder="Input your favorite Number"><br>
+				
+				<button class="btn btn-lg btn-info btn-rounded" id="mainbtn" onclick=" myfun();">Click Here</button>
+				<h3 class="text-white" ><span id="pointCard">Your Score :</span></h3>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
